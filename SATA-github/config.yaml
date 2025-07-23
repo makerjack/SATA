@@ -1,0 +1,25 @@
+num_clients : 50
+clients_per_round : 10
+malicious_ratio : 0.1
+start_round : 1
+end_round : 600
+local_epochs : 2
+batch_size : 64
+local_lr : 0.001
+use_dirichlet : True
+dirichlet_alpha : 0.5
+poison_start : 300
+poison_end : 500
+poison_label_swap : 1
+trigger_size : 6
+blend_alpha : 1.0
+trigger_types : [0, 1, 2, 3, 4]
+poison_alpha : 2.4
+poison_beta : 1.0
+running_file : 25-06-25-sata-1.py
+base_output_dir : output
+output_dir : output\2025-06-25_08-42
+load_model : True
+load_model_path : output/2025-05-08_22-30-300/global_model_final.pth
+save_model : False
+defense_method : none
